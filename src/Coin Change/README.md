@@ -24,6 +24,10 @@ variety of coins, and if the coin value is smaller than or equal to
 the amount (somewhere between 1 and `amount`) at hand, we perform the
 following update:
 
+
+coin change is a greedy problem to solve
+
+
 ```cpp
 dp[i] = min(dp[i], 1 + dp[i - val]);
 ```
